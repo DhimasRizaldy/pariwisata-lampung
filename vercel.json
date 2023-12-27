@@ -1,6 +1,0 @@
-{
-  "version": 2,
-  "name": "pariwisata-lampung",
-  "builds": [{ "src": "index.html", "use": "@vercel/static" }],
-  "routes": [{ "handle": "filesystem" }]
-}
