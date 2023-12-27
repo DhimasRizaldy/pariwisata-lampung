@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "backend_pariwisata",
-  "builds": [{ "src": "index.html", "use": "@vercel/node" }],
-  "routes": [{ "src": "index.html", "dest": "/", "status": 200 }]
+  "name": "pariwisata-lampung",
+  "builds": [{ "src": "index.html", "use": "@vercel/static" }],
+  "routes": [{ "handle": "filesystem" }]
 }
