@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import "../../../assets/dist/css/app.css";
 import logo from "../../../assets/dist/images/logo.svg";
 import Breadcrumb from "../Topbar/Breadcrumb";
 import Notifications from "../Topbar/Notifications";

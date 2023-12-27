@@ -1,5 +1,4 @@
 import React, { Component, Fragment, useState } from "react";
-import "../../../assets/dist/css/app.css";
 import Logo from "../../../assets/dist/images/logo.svg";
 import feather from "feather-icons";
 import { Link } from "react-router-dom";

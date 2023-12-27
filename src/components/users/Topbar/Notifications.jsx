@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import "../../../assets/dist/css/app.css";
 import Profile11 from "../../../assets/dist/images/profile-11.jpg";
 import Profile7 from "../../../assets/dist/images/profile-7.jpg";
 import Profile3 from "../../../assets/dist/images/profile-3.jpg";

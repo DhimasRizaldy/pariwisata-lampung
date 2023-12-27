@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import "../../../assets/dist/css/app.css";
 import feather from "feather-icons";
 
 class FooterNav extends Component {
