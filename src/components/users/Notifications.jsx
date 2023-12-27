@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
-import Profile11 from "../../../assets/dist/images/profile-11.jpg";
-import Profile7 from "../../../assets/dist/images/profile-7.jpg";
-import Profile3 from "../../../assets/dist/images/profile-3.jpg";
-import Profile1 from "../../../assets/dist/images/profile-1.jpg";
+import Profile11 from "../../assets/dist/images/profile-11.jpg";
+import Profile7 from "../../assets/dist/images/profile-7.jpg";
+import Profile3 from "../../assets/dist/images/profile-3.jpg";
+import Profile1 from "../../assets/dist/images/profile-1.jpg";
 import feather from "feather-icons";
 
 class Notifications extends Component {

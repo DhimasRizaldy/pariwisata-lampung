@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
-import logo from "../../../assets/dist/images/logo.svg";
-import Breadcrumb from "../Topbar/Breadcrumb";
-import Notifications from "../Topbar/Notifications";
-import Search from "../Topbar/Seacrh";
-import AccountMenu from "../Topbar/AccountMenu";
+import logo from "../../assets/dist/images/logo.svg";
+import Breadcrumb from "./Breadcrumb";
+import Notifications from "./Notifications";
+import Search from "./Seacrh";
+import AccountMenu from "./AccountMenu";
 import feather from "feather-icons";
 
 class TopBar extends Component {

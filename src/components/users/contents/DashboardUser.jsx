@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import "../SliderBanner/SliderBanner";
+import "../SliderBanner";
 import feather from "feather-icons";
 
 const DashbordUser = (props) => {

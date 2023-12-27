@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "../../../assets/dist/css/app.css";
 import Rekomendasi from "./Rekomendasi";
-import SliderBanner from "../../../components/users/SliderBanner/SliderBanner";
+import SliderBanner from "../../../components/users/SliderBanner";
 
 class ContentRekomendasi extends Component {
   render() {
