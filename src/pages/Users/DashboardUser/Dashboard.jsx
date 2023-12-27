@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "../../../assets/dist/css/app.css";
-import DashbordUser from "../../../components/users/contents/DashboardUser";
+import DashbordUser from "../../../components/users/DashboardUser";
 import axios from "axios";
 
 class Dashboard extends Component {

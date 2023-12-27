@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect } from "react";
-import "../SliderBanner";
+import "./SliderBanner";
 import feather from "feather-icons";
 
-const RekomendasiUser = (props) => {
+const DashbordUser = (props) => {
   useEffect(() => {
     feather.replace();
   }, []);
@@ -71,7 +71,7 @@ const RekomendasiUser = (props) => {
               Views: <span className="font-medium">85k</span>
             </div>
             <div className="ml-auto">
-              RekomendasiUser: <span className="font-medium">87k</span>
+              Rekomendasi: <span className="font-medium">87k</span>
             </div>
           </div>
           <button className="button w-24 rounded-full shadow-md mr- mb-2 mt-2 bg-theme-1 text-white">
@@ -91,4 +91,4 @@ const RekomendasiUser = (props) => {
   );
 };
 
-export default RekomendasiUser;
+export default DashbordUser;
