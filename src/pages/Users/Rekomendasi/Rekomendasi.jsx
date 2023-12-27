@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import "../../../assets/dist/css/app.css";
 import RekomendasiUser from "../../../components/users/contents/RekomendasiUser";
 import axios from "axios";
 
