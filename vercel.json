@@ -1,3 +1,6 @@
 {
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  "version": 2,
+  "name": "backend_pariwisata",
+  "builds": [{ "src": "index.html", "use": "@vercel/node" }],
+  "routes": [{ "src": "index.html", "dest": "/", "status": 200 }]
 }
