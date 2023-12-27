@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Logo from "../assets/dist/images/logo.svg";
+import Logo from "../assets/images/logo.svg";
 import feather from "feather-icons";
 import { Link } from "react-router-dom";
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Axios } from "axios";
-import "../../../assets/dist/css/app.css";
+import "../../../assets/css/app.css";
 
 const DetailContent = () => {
   const [wisata, setWisata] = useState({

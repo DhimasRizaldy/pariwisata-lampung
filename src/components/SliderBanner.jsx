@@ -1,9 +1,9 @@
 // SliderBanner.js
 import React, { Component, Fragment } from "react";
-import "../assets/dist/css/app.css";
+import "../assets/css/app.css";
 import feather from "feather-icons";
-import fotobanner1 from "../assets/dist/images/Banner/Banner-Carousel1.png";
-import fotobanner2 from "../assets/dist/images/Banner/Banner-Carousel2.png";
+import fotobanner1 from "../assets/images/Banner/Banner-Carousel1.png";
+import fotobanner2 from "../assets/images/Banner/Banner-Carousel2.png";
 
 class SliderBanner extends Component {
   componentDidMount() {

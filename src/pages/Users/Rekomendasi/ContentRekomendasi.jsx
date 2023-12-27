@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import "../../../assets/dist/css/app.css";
+import "../../../assets/css/app.css";
 import Rekomendasi from "./Rekomendasi";
 import SliderBanner from "../../../components/SliderBanner";
 
