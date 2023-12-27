@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import RekomendasiUser from "../../../components/users/RekomendasiUser";
+import RekomendasiUser from "../../../components/RekomendasiUser";
 import axios from "axios";
 
 class Rekomendasi extends Component {

@@ -1,10 +1,10 @@
 // HomeUser.js
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MobileNav from "../../components/users/MobileNav";
-import TopBar from "../../components/users/TopBar";
-import TopNav from "../../components/users/TopNav";
-import FooterNav from "../../components/users/FooterNav";
+import MobileNav from "../../components/MobileNav";
+import TopBar from "../../components/TopBar";
+import TopNav from "../../components/TopNav";
+import FooterNav from "../../components/FooterNav";
 import ContentUser from "../../pages/Users/DashboardUser/ContentUser";
 import ContentRekomendasi from "../Users/Rekomendasi/ContentRekomendasi";
 

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Profile9 from "../../assets/dist/images/profile-9.jpg";
+import Profile9 from "../assets/dist/images/profile-9.jpg";
 import feather from "feather-icons";
 
 class AccountMenu extends Component {
