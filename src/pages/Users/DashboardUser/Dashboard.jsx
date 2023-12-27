@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import "../../../assets/css/app.css";
 import DashbordUser from "../../../components/DashboardUser";
 import axios from "axios";
+import config from "../../../services/api/config";
 
 class Dashboard extends Component {
   state = {
@@ -10,7 +11,7 @@ class Dashboard extends Component {
 
   getWisataAPI = () => {
     axios
-      .get("https://backend-pariwisata.vercel.app/api/v1/wisata")
+      .get(`${config.apiUrl}/wisata`)
       .then((result) => {
         // console.log(result.data);
         this.setState({

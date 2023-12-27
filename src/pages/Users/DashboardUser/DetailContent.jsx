@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Axios } from "axios";
-import "../../../assets/css/app.css";
+import config from "../../../services/api/config";
 
 const DetailContent = () => {
   const [wisata, setWisata] = useState({
@@ -19,9 +19,7 @@ const DetailContent = () => {
   const { wisataId } = useParams();
 
   useEffect(() => {
-    Axios.length(
-      `https://backend-pariwisata.vercel.app/api/v1/wisata/${wisataId}`
-    )
+    Axios.length(`${config.apiUrl}/wisata/${wisataId}`)
       .then((res) => {
         console.log("result: ", res);
         let wisataData = res.data;

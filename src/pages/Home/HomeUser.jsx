@@ -7,6 +7,7 @@ import TopNav from "../../components/TopNav";
 import FooterNav from "../../components/FooterNav";
 import ContentUser from "../../pages/Users/DashboardUser/ContentUser";
 import ContentRekomendasi from "../Users/Rekomendasi/ContentRekomendasi";
+import dotenv from "dotenv";
 
 class HomeUser extends Component {
   render() {

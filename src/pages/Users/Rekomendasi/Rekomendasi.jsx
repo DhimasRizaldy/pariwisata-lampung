@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import RekomendasiUser from "../../../components/RekomendasiUser";
 import axios from "axios";
+import config from "../../../services/api/config";
 
 class Rekomendasi extends Component {
   state = {
@@ -9,7 +10,7 @@ class Rekomendasi extends Component {
 
   getWisataAPI = () => {
     axios
-      .get("https://backend-pariwisata.vercel.app/api/v1/wisata")
+      .get(`${config.apiUrl}/wisata`)
       .then((result) => {
         // console.log(result.data);
         this.setState({
