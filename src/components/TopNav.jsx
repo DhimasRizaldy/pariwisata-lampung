@@ -21,7 +21,7 @@ class TopNav extends Component {
               </Link>
             </li>
             <li>
-              <a href="#" className="top-menu">
+              <a href="#" className="top-menu top-menu--active">
                 <div className="top-menu__icon">
                   <i data-feather="layout"></i>
                 </div>
@@ -88,7 +88,7 @@ class TopNav extends Component {
               </ul>
             </li>
             <li>
-              <Link to="/rekomendasi" className="top-menu">
+              <Link to="/rekomendasi" className="top-menu top-menu--active">
                 <div className="top-menu__icon">
                   <i data-feather="grid"></i>
                 </div>
@@ -96,7 +96,7 @@ class TopNav extends Component {
               </Link>
             </li>
             <li>
-              <a href="#" className="top-menu">
+              <a href="#" className="top-menu top-menu--active">
                 <div className="top-menu__icon">
                   <i data-feather="pocket"></i>
                 </div>
@@ -104,7 +104,7 @@ class TopNav extends Component {
               </a>
             </li>
             <li>
-              <a href="#" className="top-menu">
+              <a href="#" className="top-menu top-menu--active">
                 <div className="top-menu__icon">
                   <i data-feather="log-in"></i>
                 </div>

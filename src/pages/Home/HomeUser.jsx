@@ -17,7 +17,6 @@ class HomeUser extends Component {
           <MobileNav />
           <TopBar />
           <TopNav />
-          <div className="content">
             <Routes>
               <Route path="/" element={<ContentUser />} />
               <Route
@@ -26,7 +25,6 @@ class HomeUser extends Component {
               />
               <Route path="/rekomendasi" element={<ContentRekomendasi />} />
             </Routes>
-          </div>
           <FooterNav />
         </div>
       </Router>
