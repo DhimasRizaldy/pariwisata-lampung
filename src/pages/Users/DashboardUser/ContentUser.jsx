@@ -11,7 +11,7 @@ class ContentUser extends Component {
           <div className="intro-y box mt-10">
             <SliderBanner />
           </div>
-          <div className="intro-y flex items-center justify-center mt-5 mb-10">
+          <div className="intro-y flex items-center justify-center mt-10 mb-10">
             <h2 className="text-lg font-bold">Wisata Alam Lampung</h2>
           </div>
           <div className="intro-y grid grid-cols-12 gap-6 mt-5">

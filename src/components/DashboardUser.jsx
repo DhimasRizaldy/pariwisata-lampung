@@ -19,6 +19,7 @@ const DashbordUser = (props) => {
             )}
           </div>
           <div className="ml-3 mr-auto">
+            
             <a href="" className="font-medium">
               Wisata Lampung
             </a>
@@ -38,10 +39,7 @@ const DashbordUser = (props) => {
               src={data.foto_wisata || "default_image_url"}
             />
           </div>
-          <div
-            className="block font-medium text-base mt-5"
-            onClick={() => props.goDetail(data.id)}
-          >
+          <div className="block font-medium text-base mt-5">
             {data.nama_wisata}
           </div>
           <div className="text-gray-700 mt-2">{data.deskripsi}</div>
@@ -79,11 +77,9 @@ const DashbordUser = (props) => {
           </button>
           <button
             className="button w-24 rounded-full shadow-md mr- mb-2 mt-2 bg-theme-1 text-white"
-            onClick={() => props.goDetail(data.id)}
+            onClick={() => props.goDetail(props.data.id)}
           >
-            <a href="" onClick={() => props.goDetail(data.id)}>
-              Lihat
-            </a>
+            Lihat
           </button>
         </div>
       </div>

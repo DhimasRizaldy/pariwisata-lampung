@@ -3,39 +3,41 @@ import "../../../assets/css/app.css";
 import DashbordUser from "../../../components/DashboardUser";
 import axios from "axios";
 import config from "../../../services/api/config";
+import { useNavigate } from "react-router-dom";
 
-class Dashboard extends Component {
-  state = {
-    wisata: [],
+const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const handleDetail = (id) => {
+    navigate(`/wisata/${id}`);
   };
 
-  getWisataAPI = () => {
+  const [wisata, setWisata] = React.useState([]);
+
+  const getWisataAPI = () => {
     axios
       .get(`${config.apiUrl}/wisata`)
       .then((result) => {
-        // console.log(result.data);
-        this.setState({
-          wisata: result.data.data.wisata,
-        });
+        setWisata(result.data.data.wisata);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   };
 
-  componentDidMount() {
-    this.getWisataAPI();
-  }
+  React.useEffect(() => {
+    getWisataAPI();
+  }, []);
 
-  render() {
-    return (
-      <Fragment>
-        {this.state.wisata.map((data) => {
-          return <DashbordUser key={data.id} data={data} />;
-        })}
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      {wisata.map((data) => {
+        return (
+          <DashbordUser key={data.id} data={data} goDetail={handleDetail} />
+        );
+      })}
+    </Fragment>
+  );
+};
 
 export default Dashboard;

@@ -96,12 +96,12 @@ class TopNav extends Component {
               </Link>
             </li>
             <li>
-              <a href="#" className="top-menu top-menu--active">
+              <Link to="/tentang-kami" className="top-menu top-menu--active">
                 <div className="top-menu__icon">
                   <i data-feather="pocket"></i>
                 </div>
                 <div className="top-menu__title"> Tentang Kami </div>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="top-menu top-menu--active">

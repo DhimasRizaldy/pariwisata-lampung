@@ -38,10 +38,7 @@ const RekomendasiUser = (props) => {
               src={data.foto_wisata || "default_image_url"}
             />
           </div>
-          <div
-            className="block font-medium text-base mt-5"
-            onClick={() => props.goDetail(data.id)}
-          >
+          <div className="block font-medium text-base mt-5">
             {data.nama_wisata}
           </div>
           <div className="text-gray-700 mt-2">{data.deskripsi}</div>
@@ -71,7 +68,7 @@ const RekomendasiUser = (props) => {
               Views: <span className="font-medium">85k</span>
             </div>
             <div className="ml-auto">
-              RekomendasiUser: <span className="font-medium">87k</span>
+              Rekomendasi: <span className="font-medium">87k</span>
             </div>
           </div>
           <button className="button w-24 rounded-full shadow-md mr- mb-2 mt-2 bg-theme-1 text-white">
@@ -79,11 +76,9 @@ const RekomendasiUser = (props) => {
           </button>
           <button
             className="button w-24 rounded-full shadow-md mr- mb-2 mt-2 bg-theme-1 text-white"
-            onClick={() => props.goDetail(data.id)}
+            onClick={() => props.goDetail(props.data.id)}
           >
-            <a href="" onClick={() => props.goDetail(data.id)}>
-              Lihat
-            </a>
+            Lihat
           </button>
         </div>
       </div>

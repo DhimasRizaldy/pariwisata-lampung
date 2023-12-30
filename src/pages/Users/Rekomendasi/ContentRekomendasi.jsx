@@ -11,7 +11,7 @@ class ContentRekomendasi extends Component {
           <div className="intro-y box mt-10">
             <SliderBanner />
           </div>
-          <div className="intro-y flex items-center justify-center mt-5 mb-10">
+          <div className="intro-y flex items-center justify-center mt-10 mb-10">
             <h2 className="text-lg font-bold">
               Rekomendasi Wisata Alam Lampung
             </h2>

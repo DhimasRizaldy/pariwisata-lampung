@@ -132,15 +132,15 @@ class MobileNav extends Component {
               </Link>
             </li>
             <li>
-              <a href="side-menu-post.html" className="menu">
+              <Link to="/tentang-kami" className="menu">
                 <div className="menu__icon">
                   <i data-feather="pocket"></i>
                 </div>
                 <div className="menu__title"> Tentang kami </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="side-menu-post.html" className="menu">
+              <a href="#" className="menu">
                 <div className="menu__icon">
                   <i data-feather="log-in"></i>
                 </div>
