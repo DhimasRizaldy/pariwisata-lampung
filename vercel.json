@@ -1,5 +1,3 @@
 {
-  "version": 2,
-  "name": "pariwisata-lampung",
-  "routes": [{ "src": "index.html", "dest": "/", "status": 200 }]
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }
