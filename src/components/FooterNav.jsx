@@ -37,13 +37,23 @@ class FooterNav extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="rekomendasi" className="hover:text-gray-500">
+                  <Link to="/rekomendasi" className="hover:text-gray-500">
                     Rekomendasi
                   </Link>
                 </li>
                 <li>
-                  <Link to="tentang-kami" className="hover:text-gray-500">
+                  <Link to="/tentang-kami" className="hover:text-gray-500">
                     Tentang Kami
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/login" className="hover:text-gray-500">
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/register" className="hover:text-gray-500">
+                    Register
                   </Link>
                 </li>
               </ul>
