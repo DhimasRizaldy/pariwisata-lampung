@@ -5,6 +5,9 @@ import config from "../../../services/api/config";
 import admin from "../../../assets/images/avatar/logo avatar 1.jpg";
 import user1 from "../../../assets/images/avatar/logo avatar 2.jpg";
 import user2 from "../../../assets/images/avatar/logo avatar 1.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const DetailContent = () => {
   const [wisata, setWisata] = useState({
@@ -18,6 +21,16 @@ const DetailContent = () => {
     tanggal: "",
     foto_wisata: "",
   });
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
 
   const { wisataId } = useParams();
 
@@ -57,14 +70,29 @@ const DetailContent = () => {
         <span className="mx-1">•</span> 7 Min read
       </div>
       <div className="intro-y mt-6">
-        <div className="news__preview image-fit image-zoom relative">
-          <img
-            alt="Foto Wisata Alam"
-            className="rounded-md"
-            src={wisata.foto_wisata}
-            data-zoom={wisata.foto_wisata}
-          />
-        </div>
+        <Slider {...settings}>
+          <div className="news__preview image-fit">
+            <img
+              src={wisata.foto_wisata}
+              alt="Slide 1"
+              className="w-full h-auto max-h-64 object-cover !important"
+            />
+          </div>
+          <div className="news__preview image-fit">
+            <img
+              src={wisata.foto_wisata}
+              alt="Slide 2"
+              className="w-full h-auto max-h-64 object-cover !important"
+            />
+          </div>
+          <div className="news__preview image-fit">
+            <img
+              src={wisata.foto_wisata}
+              alt="Slide 3"
+              className="w-full h-auto max-h-64 object-cover !important"
+            />
+          </div>
+        </Slider>
       </div>
       <div className="intro-y flex relative pt-16 sm:pt-6 items-center pb-6">
         <div className="absolute sm:relative -mt-12 sm:mt-0 w-full flex text-gray-700 text-xs sm:text-sm">

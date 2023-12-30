@@ -20,11 +20,7 @@ const DashbordUser = (props) => {
             )}
           </div>
           <div class="w-10 h-10 flex-none image-fit">
-            <img
-              alt="Image"
-              class="rounded-full"
-              src={admin}
-            />
+            <img alt="Image" class="rounded-full" src={admin} />
           </div>
           <div className="ml-3 mr-auto">
             <a href="" className="font-medium">

@@ -5,6 +5,10 @@ import config from "../../../services/api/config";
 import admin from "../../../assets/images/avatar/logo avatar 1.jpg";
 import user1 from "../../../assets/images/avatar/logo avatar 2.jpg";
 import user2 from "../../../assets/images/avatar/logo avatar 1.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import YouTube from "react-youtube";
 
 const DetailContent = () => {
   const [wisata, setWisata] = useState({
@@ -17,7 +21,19 @@ const DetailContent = () => {
     harga_tiket: "",
     tanggal: "",
     foto_wisata: "",
+    urlmaps: "",
+    urlvideo: "",
   });
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 60000,
+  };
 
   const { wisataId } = useParams();
 
@@ -37,6 +53,8 @@ const DetailContent = () => {
           harga_tiket: dataWisata.harga_tiket,
           tanggal: dataWisata.tanggal,
           foto_wisata: dataWisata.foto_wisata,
+          urlmaps: dataWisata.urlmaps,
+          urlvideo: dataWisata.urlvideo,
         });
       })
       .catch((error) => {
@@ -57,14 +75,28 @@ const DetailContent = () => {
         <span className="mx-1">•</span> 7 Min read
       </div>
       <div className="intro-y mt-6">
-        <div className="news__preview image-fit image-zoom relative">
-          <img
-            alt="Foto Wisata Alam"
-            className="rounded-md"
-            src={wisata.foto_wisata}
-            data-zoom={wisata.foto_wisata}
-          />
-        </div>
+        <Slider {...settings}>
+          <div className="news__preview image-fit">
+            <img
+              src={wisata.foto_wisata}
+              alt="Slide 1"
+              className="w-full h-auto max-h-64 object-cover !important"
+            />
+          </div>
+          <div className="news__preview image-fit flex justify-center items-center">
+            <YouTube
+              videoId={wisata.urlvideo}
+              className="w-full flex flex-col gap-4 flex justify-center items-center"
+            />
+          </div>
+          <div className="news__preview image-fit">
+            <img
+              src={wisata.foto_wisata}
+              alt="Slide 3"
+              className="w-full h-auto max-h-64 object-cover !important"
+            />
+          </div>
+        </Slider>
       </div>
       <div className="intro-y flex relative pt-16 sm:pt-6 items-center pb-6">
         <div className="absolute sm:relative -mt-12 sm:mt-0 w-full flex text-gray-700 text-xs sm:text-sm">
@@ -104,6 +136,20 @@ const DetailContent = () => {
         </div>
         <div className="intro-x mr-1 sm:mr-3 font-medium">
           Alamat Wisata : <span className="font-normal">{wisata.alamat}</span>
+        </div>
+        <div className="intro-x mr-1 sm:mr-3 font-medium">
+          Maps Alamat Wisata :
+        </div>
+        <div className="intro-y text-justify leading-relaxed">
+          <iframe
+            loading="lazy"
+            style={{ border: 0 }}
+            src={wisata.urlmaps}
+            width="600"
+            height="450"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"
+          ></iframe>
         </div>
       </div>
       <div className="intro-y flex text-xs sm:text-sm flex-col sm:flex-row items-center mt-5 pt-5 border-t border-gray-200">
