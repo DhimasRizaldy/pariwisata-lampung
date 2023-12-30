@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import feather from "feather-icons";
+import { Link } from "react-router-dom";
 
 class FooterNav extends Component {
   componentDidMount() {
@@ -10,42 +11,48 @@ class FooterNav extends Component {
     return (
       <Fragment>
         <footer className="border-theme-24 text-white py-12">
-          <div className="container mx-auto flex flex-wrap items-center justify-between">
-            <div className="w-full md:w-1/2 lg:w-1/4 mb-8 md:mb-0">
-              <h1 className="text-2xl font-bold">Nama Perusahaan</h1>
-              <p className="mt-4">Deskripsi singkat tentang perusahaan Anda.</p>
+          <div className="container mx-auto flex flex-wrap items-start justify-between">
+            <div className="w-full md:w-1/2 lg:w-1/4 mb-8 md:mb-0 ml-auto">
+              <h1 className="text-2xl font-bold">Pariwisata Lampung</h1>
+              <p className="mt-4">
+                Website Pariwisata Lampung merupakan platform digital yang
+                dirancang untuk memberikan informasi lengkap dan menarik tentang
+                destinasi pariwisata di provinsi Lampung. Dengan tampilan yang
+                ramah pengguna, website ini menyajikan beragam konten
+                informatif, mulai dari keindahan alam, objek wisata, budaya.
+              </p>
             </div>
 
             <div className="w-full md:w-1/2 lg:w-1/4 mb-8 md:mb-0">
               <h2 className="text-lg font-semibold mb-4">Navigasi</h2>
               <ul>
                 <li>
-                  <a href="#" className="hover:text-gray-500">
+                  <Link to="/" className="hover:text-gray-500">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-500">
+                  <Link to="/kategori-wisata" className="hover:text-gray-500">
                     Kategori Wisata Alam
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-500">
+                  <Link to="rekomendasi" className="hover:text-gray-500">
                     Rekomendasi
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-500">
+                  <Link to="tentang-kami" className="hover:text-gray-500">
                     Tentang Kami
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div className="w-full md:w-1/2 lg:w-1/4 mb-8 md:mb-0">
               <h2 className="text-lg font-semibold mb-4">Hubungi Kami</h2>
-              <p>Email: info@namaperusahaan.com</p>
-              <p>Telepon: (123) 456-7890</p>
+              <p>Email: pariwisata-lampung@gmail.com</p>
+              <p>Telepon: (0896) 7213-7890</p>
             </div>
 
             <div className="w-full md:w-1/2 lg:w-1/4">
@@ -55,27 +62,37 @@ class FooterNav extends Component {
                   href="#"
                   className="text-gray-400 hover:text-white"
                   data-feather="facebook"
-                ></a>
+                >
+                  <i className="fab fa-facebook"></i>
+                </a>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white"
                   data-feather="twitter"
-                ></a>
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white"
                   data-feather="instagram"
-                ></a>
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white"
                   data-feather="linkedin"
-                ></a>
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white"
                   data-feather="youtube"
-                ></a>
+                >
+                  <i className="fab fa-youtube"></i>
+                </a>
               </div>
             </div>
           </div>

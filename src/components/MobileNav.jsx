@@ -140,12 +140,12 @@ class MobileNav extends Component {
               </Link>
             </li>
             <li>
-              <a href="#" className="menu">
+              <Link to="/login" className="menu">
                 <div className="menu__icon">
                   <i data-feather="log-in"></i>
                 </div>
                 <div className="menu__title"> Login </div>
-              </a>
+              </Link>
             </li>
             <li className="menu__devider my-6"></li>
           </ul>

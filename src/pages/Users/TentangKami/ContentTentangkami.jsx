@@ -8,7 +8,7 @@ class ContentTentangKami extends Component {
     return (
       <Fragment>
         <div className="content">
-          <h2 class="intro-y text-2xl font-medium mt-10 text-center mr-auto">
+          <h2 className="intro-y text-2xl font-medium mt-10 text-center mr-auto">
             Tentang Kami
           </h2>
           <TentangKami />

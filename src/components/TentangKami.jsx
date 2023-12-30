@@ -11,23 +11,22 @@ const TentangKami = (props) => {
     <Fragment>
       <div className="intro-y flex justify-center mt-6">
         <div className="pricing-tabs nav-tabs box rounded-full overflow-hidden flex">
-          {" "}
           <a
             data-toggle="tab"
             data-target="#layout-1-monthly-fees"
-            href="javascript:;"
+            href="#"
             className="flex-1 w-32 lg:w-40 py-2 lg:py-3 whitespace-no-wrap text-center active"
           >
             Pariwisata Lampung
-          </a>{" "}
+          </a>
           <a
             data-toggle="tab"
             data-target="#layout-1-annual-fees"
-            href="javascript:;"
+            href="#"
             className="flex-1 w-32 lg:w-40 py-2 lg:py-3 whitespace-no-wrap text-center"
           >
             Wisata ALam Lampung
-          </a>{" "}
+          </a>
         </div>
       </div>
       <div className="flex mt-10">
@@ -45,9 +44,8 @@ const TentangKami = (props) => {
                 Business
               </div>
               <div className="text-gray-700 text-center mt-5">
-                {" "}
-                1 Domain <span className="mx-1">•</span> 10 Users{" "}
-                <span className="mx-1">•</span> 20 Copies{" "}
+                1 Domain <span className="mx-1">•</span> 10 Users
+                <span className="mx-1">•</span> 20 Copies
               </div>
               <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -55,11 +53,10 @@ const TentangKami = (props) => {
               </div>
               <div className="flex justify-center">
                 <div className="relative text-5xl font-semibold mt-8 mx-auto">
-                  {" "}
-                  60{" "}
+                  60
                   <span className="absolute text-2xl top-0 right-0 text-gray-500 -mr-4 mt-1">
                     $
-                  </span>{" "}
+                  </span>
                 </div>
               </div>
               <button
@@ -78,9 +75,8 @@ const TentangKami = (props) => {
                 Business
               </div>
               <div className="text-gray-700 text-center mt-5">
-                {" "}
-                1 Domain <span className="mx-1">•</span> 10 Users{" "}
-                <span className="mx-1">•</span> 20 Copies{" "}
+                1 Domain <span className="mx-1">•</span> 10 Users
+                <span className="mx-1">•</span> 20 Copies
               </div>
               <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -88,11 +84,10 @@ const TentangKami = (props) => {
               </div>
               <div className="flex justify-center">
                 <div className="relative text-5xl font-semibold mt-8 mx-auto">
-                  {" "}
-                  60{" "}
+                  60
                   <span className="absolute text-2xl top-0 right-0 text-gray-500 -mr-4 mt-1">
                     $
-                  </span>{" "}
+                  </span>
                 </div>
               </div>
               <button
@@ -111,9 +106,8 @@ const TentangKami = (props) => {
                 Enterprise
               </div>
               <div className="text-gray-700 text-center mt-5">
-                {" "}
-                1 Domain <span className="mx-1">•</span> 10 Users{" "}
-                <span className="mx-1">•</span> 20 Copies{" "}
+                1 Domain <span className="mx-1">•</span> 10 Users
+                <span className="mx-1">•</span> 20 Copies
               </div>
               <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -121,11 +115,10 @@ const TentangKami = (props) => {
               </div>
               <div className="flex justify-center">
                 <div className="relative text-5xl font-semibold mt-8 mx-auto">
-                  {" "}
-                  120{" "}
+                  120
                   <span className="absolute text-2xl top-0 right-0 text-gray-500 -mr-4 mt-1">
                     $
-                  </span>{" "}
+                  </span>
                 </div>
               </div>
               <button
@@ -149,9 +142,8 @@ const TentangKami = (props) => {
                 Business
               </div>
               <div className="text-gray-700 text-center mt-5">
-                {" "}
-                1 Domain <span className="mx-1">•</span> 10 Users{" "}
-                <span className="mx-1">•</span> 20 Copies{" "}
+                1 Domain <span className="mx-1">•</span> 10 Users
+                <span className="mx-1">•</span> 20 Copies
               </div>
               <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -159,11 +151,10 @@ const TentangKami = (props) => {
               </div>
               <div className="flex justify-center">
                 <div className="relative text-5xl font-semibold mt-8 mx-auto">
-                  {" "}
-                  60{" "}
+                  60
                   <span className="absolute text-2xl top-0 right-0 text-gray-500 -mr-4 mt-1">
                     $
-                  </span>{" "}
+                  </span>
                 </div>
               </div>
               <button
@@ -182,9 +173,8 @@ const TentangKami = (props) => {
                 Business
               </div>
               <div className="text-gray-700 text-center mt-5">
-                {" "}
-                1 Domain <span className="mx-1">•</span> 10 Users{" "}
-                <span className="mx-1">•</span> 20 Copies{" "}
+                1 Domain <span className="mx-1">•</span> 10 Users
+                <span className="mx-1">•</span> 20 Copies
               </div>
               <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -192,11 +182,10 @@ const TentangKami = (props) => {
               </div>
               <div className="flex justify-center">
                 <div className="relative text-5xl font-semibold mt-8 mx-auto">
-                  {" "}
-                  40{" "}
+                  40
                   <span className="absolute text-2xl top-0 right-0 text-gray-500 -mr-4 mt-1">
                     $
-                  </span>{" "}
+                  </span>
                 </div>
               </div>
               <button
@@ -215,9 +204,8 @@ const TentangKami = (props) => {
                 Enterprise
               </div>
               <div className="text-gray-700 text-center mt-5">
-                {" "}
-                1 Domain <span className="mx-1">•</span> 10 Users{" "}
-                <span className="mx-1">•</span> 20 Copies{" "}
+                1 Domain <span className="mx-1">•</span> 10 Users
+                <span className="mx-1">•</span> 20 Copies
               </div>
               <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -225,11 +213,10 @@ const TentangKami = (props) => {
               </div>
               <div className="flex justify-center">
                 <div className="relative text-5xl font-semibold mt-8 mx-auto">
-                  {" "}
-                  90{" "}
+                  90
                   <span className="absolute text-2xl top-0 right-0 text-gray-500 -mr-4 mt-1">
                     $
-                  </span>{" "}
+                  </span>
                 </div>
               </div>
               <button
@@ -248,23 +235,22 @@ const TentangKami = (props) => {
         </h2>
         <div className="intro-y flex justify-center mt-6">
           <div className="pricing-tabs nav-tabs box rounded-full overflow-hidden flex">
-            {" "}
             <a
               data-toggle="tab"
               data-target="#layout-2-monthly-fees"
-              href="javascript:;"
+              href="#"
               className="flex-1 w-32 lg:w-40 py-2 lg:py-3 whitespace-no-wrap text-center active"
             >
               Informasi
-            </a>{" "}
+            </a>
             <a
               data-toggle="tab"
               data-target="#layout-2-annual-fees"
-              href="javascript:;"
+              href="#"
               className="flex-1 w-32 lg:w-40 py-2 lg:py-3 whitespace-no-wrap text-center"
             >
               Developer
-            </a>{" "}
+            </a>
           </div>
         </div>
         <div className="flex mt-10">
@@ -285,8 +271,7 @@ const TentangKami = (props) => {
                   20312040
                 </div>
                 <div className="text-gray-700 text-center mt-2">
-                  {" "}
-                  Divisi <span className="mx-1">:</span> Product Manager{" "}
+                  Divisi <span className="mx-1">:</span> Product Manager
                 </div>
                 <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -312,8 +297,7 @@ const TentangKami = (props) => {
                   20312030
                 </div>
                 <div className="text-gray-700 text-center mt-2">
-                  {" "}
-                  Divisi <span className="mx-1">:</span> Backend Developer{" "}
+                  Divisi <span className="mx-1">:</span> Backend Developer
                 </div>
                 <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -339,8 +323,7 @@ const TentangKami = (props) => {
                   20312156
                 </div>
                 <div className="text-gray-700 text-center mt-2">
-                  {" "}
-                  Divisi <span className="mx-1">:</span> Ui/UX{" "}
+                  Divisi <span className="mx-1">:</span> Ui/UX
                 </div>
                 <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -366,8 +349,7 @@ const TentangKami = (props) => {
                   20312035
                 </div>
                 <div className="text-gray-700 text-center mt-2">
-                  {" "}
-                  Divisi <span className="mx-1">:</span> Frontend Developer{" "}
+                  Divisi <span className="mx-1">:</span> Frontend Developer
                 </div>
                 <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -393,8 +375,7 @@ const TentangKami = (props) => {
                   20312105
                 </div>
                 <div className="text-gray-700 text-center mt-2">
-                  {" "}
-                  Divisi <span className="mx-1">:</span> Frontend Developer{" "}
+                  Divisi <span className="mx-1">:</span> Frontend Developer
                 </div>
                 <div className="text-gray-600 px-10 text-center mx-auto mt-2">
                   Lorem Ipsum is simply dummy text of the printing and

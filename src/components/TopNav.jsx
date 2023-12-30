@@ -104,12 +104,12 @@ class TopNav extends Component {
               </Link>
             </li>
             <li>
-              <a href="#" className="top-menu top-menu--active">
+              <Link to="/login" className="top-menu top-menu--active">
                 <div className="top-menu__icon">
                   <i data-feather="log-in"></i>
                 </div>
                 <div className="top-menu__title"> Login </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
