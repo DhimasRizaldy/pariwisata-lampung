@@ -1,13 +1,45 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./SliderBanner";
 import feather from "feather-icons";
 import ilustrasi from "../assets/images/illustration.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import config from "../services/api/config";
 
 const Login = (props) => {
+  const navigate = useNavigate();
+
+  const [formLogin, setFormLogin] = useState({
+    email: "",
+    password: "",
+  });
+
   useEffect(() => {
     feather.replace();
   }, []);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormLogin((prevFrom) => ({
+      ...prevFrom,
+      [name]: value,
+    }));
+  };
+
+  const handleLogin = async () => {
+    try {
+      const response = await axios.post(
+        `${config.apiUrl}/auth/login`,
+        formLogin
+      );
+      toast.success("Login berhasil!", { autoClose: 3000 });
+      navigate("/");
+    } catch (error) {
+      toast.error("Login Gagal!", { autoClose: 3000 });
+    }
+  };
 
   return (
     <Fragment>
@@ -42,11 +74,17 @@ const Login = (props) => {
               <div className="intro-x mt-8">
                 <input
                   type="text"
+                  name="email"
+                  value={formLogin.email}
+                  onChange={handleInputChange}
                   className="intro-x login__input input input--lg border border-gray-300 block"
                   placeholder="Email"
                 />
                 <input
                   type="password"
+                  name="password"
+                  value={formLogin.password}
+                  onChange={handleInputChange}
                   className="intro-x login__input input input--lg border border-gray-300 block mt-4"
                   placeholder="Password"
                 />
@@ -68,7 +106,10 @@ const Login = (props) => {
                 <a href="">Forgot Password?</a>
               </div>
               <div className="intro-x mt-5 xl:mt-8 text-center xl:text-left">
-                <button className="button button--lg w-full xl:w-32 text-white bg-theme-1 xl:mr-3">
+                <button
+                  className="button button--lg w-full xl:w-32 text-white bg-theme-1 xl:mr-3"
+                  onClick={handleLogin}
+                >
                   Login
                 </button>
                 <button className="button button--lg w-full xl:w-32 text-gray-700 border border-gray-300 mt-3 xl:mt-0">
@@ -90,6 +131,7 @@ const Login = (props) => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </Fragment>
   );
 };

@@ -1,18 +1,20 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "../../../assets/css/app.css";
 import DashbordUser from "../../../components/DashboardUser";
 import axios from "axios";
 import config from "../../../services/api/config";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
   const navigate = useNavigate();
+  const [wisata, setWisata] = useState([]);
+  const [isLoginSuccess, setIsLoginSuccess] = useState(false);
 
   const handleDetail = (id) => {
     navigate(`/wisata/${id}`);
   };
-
-  const [wisata, setWisata] = React.useState([]);
 
   const getWisataAPI = () => {
     axios
@@ -25,17 +27,30 @@ const Dashboard = () => {
       });
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     getWisataAPI();
+
+    // Check apakah login sukses
+    const loginSuccess = localStorage.getItem("loginSuccess");
+    if (loginSuccess) {
+      setIsLoginSuccess(true);
+      // Hapus status loginSuccess dari localStorage setelah ditangkap
+      localStorage.removeItem("loginSuccess");
+    }
   }, []);
+
+  useEffect(() => {
+    // Menampilkan toast jika login sukses
+    if (isLoginSuccess) {
+      toast.success("Login berhasil!", { autoClose: 3000 });
+    }
+  }, [isLoginSuccess]);
 
   return (
     <Fragment>
-      {wisata.map((data) => {
-        return (
-          <DashbordUser key={data.id} data={data} goDetail={handleDetail} />
-        );
-      })}
+      {wisata.map((data) => (
+        <DashbordUser key={data.id} data={data} goDetail={handleDetail} />
+      ))}
     </Fragment>
   );
 };
