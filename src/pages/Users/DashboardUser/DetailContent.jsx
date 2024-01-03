@@ -84,10 +84,12 @@ const DetailContent = () => {
             />
           </div>
           <div className="news__preview image-fit flex justify-center items-center">
-            <YouTube
-              videoId={wisata.urlvideo}
-              className="w-full flex flex-col gap-4 flex justify-center items-center"
-            />
+            <div className="aspect-w-16 aspect-h-9 w-full max-w-screen-md">
+              <YouTube
+                videoId={wisata.urlvideo}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
           <div className="news__preview image-fit">
             <img
@@ -141,25 +143,34 @@ const DetailContent = () => {
           Maps Alamat Wisata :
         </div>
         <div className="intro-y text-justify leading-relaxed">
-          <iframe
-            loading="lazy"
-            style={{ border: 0 }}
-            src={wisata.urlmaps}
-            width="600"
-            height="450"
-            frameborder="0"
-            allowfullscreen="allowfullscreen"
-          ></iframe>
+          <div
+            style={{
+              position: "relative",
+              paddingBottom: "75%",
+              height: 0,
+              overflow: "hidden",
+            }}
+          >
+            <iframe
+              loading="lazy"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: 0,
+              }}
+              src={wisata.urlmaps}
+              allowfullscreen="allowfullscreen"
+            ></iframe>
+          </div>
         </div>
       </div>
       <div className="intro-y flex text-xs sm:text-sm flex-col sm:flex-row items-center mt-5 pt-5 border-t border-gray-200">
         <div className="flex items-center">
           <div className="w-12 h-12 flex-none image-fit">
-            <img
-              alt="Midone Tailwind HTML Admin Template"
-              className="rounded-full"
-              src={admin}
-            />
+            <img alt="image asset" className="rounded-full" src={admin} />
           </div>
           <div className="ml-3 mr-auto">
             <a href="" className="font-medium">
@@ -212,11 +223,7 @@ const DetailContent = () => {
         <div className="pt-5">
           <div className="flex">
             <div className="w-10 h-10 sm:w-12 sm:h-12 flex-none image-fit">
-              <img
-                alt="Midone Tailwind HTML Admin Template"
-                className="rounded-full"
-                src={user1}
-              />
+              <img alt="image asset" className="rounded-full" src={user1} />
             </div>
             <div className="ml-3 flex-1">
               <div className="flex items-center">
@@ -241,11 +248,7 @@ const DetailContent = () => {
         <div className="mt-5 pt-5 border-t border-gray-200">
           <div className="flex">
             <div className="w-10 h-10 sm:w-12 sm:h-12 flex-none image-fit">
-              <img
-                alt="Midone Tailwind HTML Admin Template"
-                className="rounded-full"
-                src={user2}
-              />
+              <img alt="image asset" className="rounded-full" src={user2} />
             </div>
             <div className="ml-3 flex-1">
               <div className="flex items-center">
