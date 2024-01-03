@@ -2,11 +2,14 @@ import React, { Component, Fragment } from "react";
 import "../../../assets/css/app.css";
 import Dashboard from "./Dashboard";
 import SliderBanner from "../../../components/SliderBanner";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 class ContentUser extends Component {
   render() {
     return (
       <Fragment>
+        <ToastContainer />
         <div className="content">
           <div className="intro-y box mt-10">
             <SliderBanner />

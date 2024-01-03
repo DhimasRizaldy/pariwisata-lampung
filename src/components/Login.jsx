@@ -131,7 +131,6 @@ const Login = (props) => {
           </div>
         </div>
       </div>
-      <ToastContainer />
     </Fragment>
   );
 };
